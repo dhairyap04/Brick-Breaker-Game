@@ -4,7 +4,7 @@ author: Dhairya Prajapati
 date-created: March 23, 2022
 '''
 
-from sprite import Sprite
+from sprite_class import Sprite
 import pygame 
 
 

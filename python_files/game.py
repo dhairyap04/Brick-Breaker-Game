@@ -9,7 +9,7 @@ date-created: April 12, 2022
 from window import Window
 from classes import Block, Ball, Paddle
 from text import Text
-from sprite import Sprite
+from sprite_class import Sprite
 from pygame import K_SPACE
 
 LIVES = 3
@@ -28,7 +28,7 @@ class Game:
         
         self.SCORE = Text(0, self.WINDOW, 2, 10, "Score: ")
         self.LIVES = Text(LIVES, self.WINDOW, text="Lives: ") # Aggregation
-        self.LIVES.setPOS(self.WINDOW.getWidth() - self.LIVES.getWidth(), 10) 
+        self.LIVES.setPOS(self.WINDOW.getWidth() - self.LIVES.getWidth()-25, 10) 
         self.LEVEL = Text(0, self.WINDOW, 10, self.WINDOW.getHeight() - 40, "Level: ")
         self.START_TEXT = Text("Press Space To Start!", self.WINDOW, self.WINDOW.getWidth() / 2 - 90,300)
         self.STOP = Text("Life Lost! Press Space to Continue", self.WINDOW)

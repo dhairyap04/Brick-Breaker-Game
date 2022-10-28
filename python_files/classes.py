@@ -8,7 +8,7 @@ date-created: April 20, 2022
 # Polymorphism because checkCollision functions are different in Block class and Paddle Class
 
 from window import Window
-from sprite import Sprite
+from sprite_class import Sprite
 from pygame import K_d, K_a
 from random import randrange
 
